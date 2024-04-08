@@ -53,13 +53,27 @@ int main() {
     //using trignometric functions
     double angle;
     printf("Enter an angle in degrees: ");
-    angle = p1/3;
+    int PI=3.14;
+    angle = PI/3;
     printf("sin(%lf) = %lf\n", angle, sine(angle));
     printf("cos(%lf) = %lf\n", angle, cosine(angle));
     printf("tan(%lf) = %lf\n", angle, tangent(angle));
     printf("cot(%lf) = %lf\n", angle, cotangent(angle));
     printf("csc(%lf) = %lf\n", angle, cosecant(angle));
     printf("sec(%lf) = %lf\n", angle, secant(angle));
+
+    //inverse trignometric function
+    double value;
+    value=0.5;
+    
+    printf("arcsin(%lf) = %lf\n", value, arcsin(value));
+    printf("arccos(%lf) = %lf\n", value, arccos(value));
+    printf("arctan(%lf) = %lf\n", value, arctan(value));
+    printf("arccot(%lf) = %lf\n", value, arccot(value));
+    printf("arcsec(%lf) = %lf\n", value, arcsec(value));
+    printf("arccsc(%lf) = %lf\n", value, arccsc(value));
+
+
     
     return 0;
 }
